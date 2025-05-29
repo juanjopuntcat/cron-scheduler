@@ -1,6 +1,6 @@
 <?php
 /**
- * WP Cron Scheduler plugin for WordPress
+ * Cron Scheduler plugin for WordPress
  *
  * @package   cron-scheduler
  * @link      https://github.com/juanjopuntcat/cron-scheduler
@@ -8,9 +8,9 @@
  * @copyright 2025 Juanjo Rubio
  * @license   GPL v2 or later
  *
- * Plugin Name:  WP Cron Scheduler
+ * Plugin Name:  Cron Scheduler
  * Description:  Provides a GUI to change the frequency of scheduled cron jobs.
- * Version:      1.0.1
+ * Version:      1.0.2
  * Plugin URI:   https://github.com/juanjopuntcat/cron-scheduler
  * Author:       Juanjo Rubio
  * Author URI:   https://github.com/juanjopuntcat
@@ -89,7 +89,7 @@ function cron_scheduler_admin_page() {
             echo '<td><select class="cron-interval-select" data-hook="' . esc_attr($hook) . '">';
             foreach ($schedules as $key => $schedule) {
                 $selected = ($key === $saved_interval) ? 'selected' : '';
-                echo '<option value="' . esc_attr($key) . '" ' . $selected . '>' . esc_html($schedule['display']) . '</option>';
+                echo '<option value="' . esc_attr($key) . '" ' . esc_attr($selected) . '>' . esc_html($schedule['display']) . '</option>';
             }
             echo '</select></td></tr>';
         }
@@ -117,8 +117,8 @@ add_action('wp_ajax_cron_scheduler_update', function () {
     check_ajax_referer('cron_scheduler_ajax', 'nonce');
     if (!current_user_can('manage_options')) wp_send_json_error('Unauthorized');
 
-    $hook = sanitize_text_field($_POST['hook'] ?? '');
-    $interval = sanitize_text_field($_POST['interval'] ?? '');
+    $hook = sanitize_text_field(wp_unslash($_POST['hook'] ?? ''));
+    $interval = sanitize_text_field(wp_unslash($_POST['interval'] ?? ''));
     if (!$hook || !$interval) wp_send_json_error('Missing data');
 
     update_option('cron_scheduler_interval_' . $hook, $interval);
@@ -128,30 +128,4 @@ add_action('wp_ajax_cron_scheduler_update', function () {
         wp_schedule_event(time(), $interval, $hook);
     }
     wp_send_json_success();
-});
-
-add_filter('cron_schedules', function ($schedules) {
-    return array_merge($schedules, [
-        'five_minutes' => ['interval' => 300, 'display' => 'Every 5 Minutes'],
-        'ten_minutes' => ['interval' => 600, 'display' => 'Every 10 Minutes'],
-        'fifteen_minutes' => ['interval' => 900, 'display' => 'Every 15 Minutes'],
-        'thirty_minutes' => ['interval' => 1800, 'display' => 'Every 30 Minutes'],
-        'hourly' => ['interval' => 3600, 'display' => 'Every Hour'],
-        'two_hours' => ['interval' => 7200, 'display' => 'Every 2 Hours'],
-        'three_hours' => ['interval' => 10800, 'display' => 'Every 3 Hours'],
-        'four_hours' => ['interval' => 14400, 'display' => 'Every 4 Hours'],
-        'twelve_hours' => ['interval' => 43200, 'display' => 'Every 12 Hours'],
-        'daily' => ['interval' => 86400, 'display' => 'Once Daily'],
-        'two_days' => ['interval' => 172800, 'display' => 'Every 2 Days'],
-        'three_days' => ['interval' => 259200, 'display' => 'Every 3 Days'],
-        'four_days' => ['interval' => 345600, 'display' => 'Every 4 Days'],
-        'five_days' => ['interval' => 432000, 'display' => 'Every 5 Days'],
-        'weekly' => ['interval' => 604800, 'display' => 'Once Weekly'],
-        'biweekly' => ['interval' => 1209600, 'display' => 'Once Every 2 Weeks'],
-        'monthly' => ['interval' => 2592000, 'display' => 'Once Every Month'],
-        'bimonthly' => ['interval' => 5184000, 'display' => 'Once Every 2 Months'],
-        'quarterly' => ['interval' => 7776000, 'display' => 'Once Every 3 Months'],
-        'semiannually' => ['interval' => 15552000, 'display' => 'Once Every 6 Months'],
-        'yearly' => ['interval' => 31536000, 'display' => 'Once Every Year']
-    ]);
 });
