@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-cron-scheduler 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+msgid "Cron Scheduler"
+msgstr "Cron Scheduler"
+
+msgid "No cron jobs found."
+msgstr "No cron jobs found."
+
+msgid "Every 5 Minutes"
+msgstr "Every 5 Minutes"
+
+msgid "Every 10 Minutes"
+msgstr "Every 10 Minutes"
+
+msgid "Every 15 Minutes"
+msgstr "Every 15 Minutes"
+
+msgid "Every 30 Minutes"
+msgstr "Every 30 Minutes"
+
+msgid "Every Hour"
+msgstr "Every Hour"
+
+msgid "Every 2 Hours"
+msgstr "Every 2 Hours"
+
+msgid "Every 3 Hours"
+msgstr "Every 3 Hours"
+
+msgid "Every 4 Hours"
+msgstr "Every 4 Hours"
+
+msgid "Every 12 Hours"
+msgstr "Every 4 Hours"
+
+msgid "Once Daily"
+msgstr "Once Daily"
+
+msgid "Every 2 Days"
+msgstr "Every 2 Days"
+
+msgid "Every 3 Days"
+msgstr "Every 3 Days"
+
+msgid "Every 4 Days"
+msgstr "Every 4 Days"
+
+msgid "Every 5 Days"
+msgstr "Every 5 Days"
+
+msgid "Once Weekly"
+msgstr "Once Weekly"
+
+msgid "Once Every 2 Weeks"
+msgstr "Once Every 2 Weeks"
+
+msgid "Once Every Month"
+msgstr "Once Every Month"
+
+msgid "Once Every 2 Months"
+msgstr "Once Every 2 Months"
+
+msgid "Once Every 3 Months"
+msgstr "Once Every 3 Months"
+
+msgid "Once Every 6 Months"
+msgstr "Once Every 6 Months"
+
+msgid "Once Every Year"
+msgstr "Once Every Year"
+
+msgid ""
+"Use the dropdowns below to change the schedule of each cron hook. Changes "
+"are saved automatically."
+msgstr ""
+"Use the dropdowns below to change the schedule of each cron hook. Changes "
+"are saved automatically."
+
+msgid "Filter hooks..."
+msgstr "Filter hooks..."
+
+msgid "Hook"
+msgstr "Hook"
+
+msgid "Current Interval"
+msgstr "Current Interval"
+
+msgid "New Interval"
+msgstr "New Interval"
+
+msgid "One-time"
+msgstr "One-time"
+
+msgid "items"
+msgstr "items"
+
+msgid "First page"
+msgstr "First page"
+
+msgid "Previous page"
+msgstr "Previous page"
+
+msgid "of"
+msgstr "of"
+
+msgid "Next page"
+msgstr "Next page"
+
+msgid "Last page"
+msgstr "Last page"

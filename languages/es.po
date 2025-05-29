@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-cron-scheduler 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+msgid "Cron Scheduler"
+msgstr "Programador Cron"
+
+msgid "No cron jobs found."
+msgstr "No se han encontrado tareas cron."
+
+msgid "Every 5 Minutes"
+msgstr "Cada 5 minutos"
+
+msgid "Every 10 Minutes"
+msgstr "Cada 10 minutos"
+
+msgid "Every 15 Minutes"
+msgstr "Cada 15 minutos"
+
+msgid "Every 30 Minutes"
+msgstr "Cada 30 minutos"
+
+msgid "Every Hour"
+msgstr "Cada hora"
+
+msgid "Every 2 Hours"
+msgstr "Cada 2 horas"
+
+msgid "Every 3 Hours"
+msgstr "Cada 3 horas"
+
+msgid "Every 4 Hours"
+msgstr "Cada 4 horas"
+
+msgid "Every 12 Hours"
+msgstr "Cada 12 horas"
+
+msgid "Once Daily"
+msgstr "Una vez al día"
+
+msgid "Every 2 Days"
+msgstr "Cada 2 días"
+
+msgid "Every 3 Days"
+msgstr "Cada 3 días"
+
+msgid "Every 4 Days"
+msgstr "Cada 4 días"
+
+msgid "Every 5 Days"
+msgstr "Cada 5 días"
+
+msgid "Once Weekly"
+msgstr "Una vez a la semana"
+
+msgid "Once Every 2 Weeks"
+msgstr "Una vez cada 2 semanas"
+
+msgid "Once Every Month"
+msgstr "Una vez al mes"
+
+msgid "Once Every 2 Months"
+msgstr "Una vez cada 2 meses"
+
+msgid "Once Every 3 Months"
+msgstr "Una vez cada 3 meses"
+
+msgid "Once Every 6 Months"
+msgstr "Una vez cada 6 meses"
+
+msgid "Once Every Year"
+msgstr "Una vez al año"
+
+msgid ""
+"Use the dropdowns below to change the schedule of each cron hook. Changes "
+"are saved automatically."
+msgstr ""
+"Usa los menús desplegables a continuación para cambiar la programación de "
+"cada “hook” de cron. Los cambios se guardan automáticamente."
+
+msgid "Filter hooks..."
+msgstr "Filtrar “hooks”…"
+
+msgid "Hook"
+msgstr "“Hook”"
+
+msgid "Current Interval"
+msgstr "Intervalo actual"
+
+msgid "New Interval"
+msgstr "Nuevo intervalo"
+
+msgid "One-time"
+msgstr ""
+
+msgid "items"
+msgstr "elementos"
+
+msgid "First page"
+msgstr "Primera página"
+
+msgid "Previous page"
+msgstr "Página anterior"
+
+msgid "of"
+msgstr "de"
+
+msgid "Next page"
+msgstr "Siguiente página"
+
+msgid "Last page"
+msgstr "Última página"

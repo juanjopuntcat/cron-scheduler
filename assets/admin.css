@@ -1,0 +1,17 @@
+#cron-table th {
+    cursor: pointer;
+    position: relative;
+}
+
+#cron-search {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#cron-pagination {
+    margin-top: 15px;
+}
+
+#cron-pagination .button {
+    margin-right: 5px;
+}
