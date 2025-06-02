@@ -2,9 +2,9 @@
 
 ## Our Pledge
 
-We as members, contributors, and maintainers of this project pledge to make participation in our community a welcoming, respectful, and harassment-free experience for everyone.
+Me as member, contributors, and maintainers of this project pledge to make participation in our community a welcoming, respectful, and harassment-free experience for everyone.
 
-We commit to making participation in this project a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+I commit to making participation in this project a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ## Our Standards
 
@@ -24,9 +24,9 @@ Examples of unacceptable behavior include:
 - Publishing others’ private information without explicit permission
 - Any conduct which could be considered discriminatory, abusive, or threatening
 
-## Our Responsibilities
+## My Responsibilities
 
-Project maintainers are responsible for clarifying standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+I am responsible for clarifying standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
 
 ## Scope
 
