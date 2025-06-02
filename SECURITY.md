@@ -27,4 +27,4 @@ I follow responsible disclosure best practices:
 - A fix is developed and released
 - Public disclosure happens after the patch
 
-Thank you for helping us make WP Cron Scheduler more secure!
+Thank you for helping me make Cron Scheduler more secure!
