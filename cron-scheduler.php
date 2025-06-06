@@ -10,7 +10,7 @@
  *
  * Plugin Name:  Cron Scheduler
  * Description:  Provides a GUI to change the frequency of scheduled cron jobs.
- * Version:      1.0.2
+ * Version:      1.0.3
  * Plugin URI:   https://github.com/juanjopuntcat/cron-scheduler
  * Author:       Juanjo Rubio
  * Author URI:   https://github.com/juanjopuntcat
@@ -21,6 +21,10 @@
  * Requires at least: 6.0
  * Requires PHP: 8.0
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly
+}
 
 add_action('plugins_loaded', function () {
     load_plugin_textdomain('cron-scheduler', false, dirname(plugin_basename(__FILE__)) . '/languages');
