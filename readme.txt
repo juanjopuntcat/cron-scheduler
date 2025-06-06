@@ -4,7 +4,7 @@ Tags: cron, scheduler, admin, wp-cron, performance
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 8.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,9 +36,12 @@ No, it simply reschedules existing hooks.
 = 1.0.2 =
 * Changes to meet Wordpress.org guidelines
 
+= 1.0.3 =
+* Addressed errors notified by WP plugins community
+
 == Upgrade Notice ==
 
-= 1.0.2 =
+= 1.0.3 =
 Latest release. Clean and safe to install.
 
 == License ==
