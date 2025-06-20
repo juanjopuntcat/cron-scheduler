@@ -1,0 +1,23 @@
+name: Deploy to WordPress.org
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  deploy:
+    name: Deploy Plugin
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to WordPress.org
+        uses: 10up/action-wordpress-plugin-deploy@v2
+        with:
+          plugin_slug: cron-scheduler
+          svn_username: ${{ secrets.WP_SVN_USERNAME }}
+          svn_password: ${{ secrets.WP_SVN_PASSWORD }}
+          build_dir: . # or your plugin subdirectory
